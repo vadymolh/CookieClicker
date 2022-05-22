@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 
 def get_scores(scores):
+    """Get available cookie score number"""
     try:
         num = int(scores.text.split()[0])
         return num
